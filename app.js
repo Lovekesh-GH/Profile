@@ -11,3 +11,15 @@
         document.body.classList.toggle("light-mode");
     })
 })();
+
+var typed = new Typed(".typing",{
+    strings : ["Programmer","Django Developer","Designer","Linux Lover","AI Lover","Pre-Final Year Student","ML Ethusiast"],
+    startDelay: 1000,
+    typeSpeed : 120,
+    backSpeed : 80,
+    backDelay : 1000,
+    showCursor: false,
+    loopCount: Infinity,
+    shuffle: true,
+    loop : true
+})
