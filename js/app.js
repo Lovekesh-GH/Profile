@@ -23,3 +23,11 @@ var typed = new Typed(".typing",{
     shuffle: true,
     loop : true
 })
+let mixer = mixitup(".portfolios",{
+    selectors: {
+        target: ".portfolio-item",
+    },
+    animation: {
+        duration: 600,
+    },
+});

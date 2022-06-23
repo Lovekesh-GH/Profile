@@ -428,12 +428,52 @@ section {
   text-align: center;
 }
 
+
+
+
 .portfolios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
 }
+
+.portfolio-filter {
+  padding: 0;
+  margin: 0 auto 15px auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+.portfolio-filter li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 16px 10px 16px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  /* color: #fff; */
+  color: var(--color-grey-4);
+  background: var(--color-grey-5);
+  /* background: rgba(255, 255, 255, 0.1); */
+  margin: 0 3px 12px 6px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 18px;
+}
+.portfolio-filter li:hover, .portfolio-filter li.filter-active {
+  /* background: #18d26e; */
+  background-color: var(--color-secondary);
+}
+.portfolio-filter li:last-child {
+  margin-right: 0;
+}
+.list.mixitup-control-active{
+  background-color: var(--color-secondary);
+}
+
+
 .portfolios .portfolio-item {
   position: relative;
   border-radius: 15px;

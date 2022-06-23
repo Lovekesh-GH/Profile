@@ -257,7 +257,7 @@
                     <h5>Executive Member <span> - SPEC</span></h5>
                     <p>
                         <ul>
-                            <li><h3>Django Framework:<span>  Designed & Developed backend framework for my team SPEC-NITH.<strong>Tech:</strong>Python, Django,
+                            <li><h3>Django Framework:<span>  Designed & Developed backend framework for my team SPEC-NITH.<strong>Tech:</strong> Python, Django,
                                 HTML/CSS, Javascript</span></h3></li>
                             <li><h3>Electrothon 3.0:<span>  Organised & managed a National Level Hackathon with 2000+ registrations globally.</span></h3></li>
                             <li><h3>Specfest:<span>  Organised & managed the <strong>bounty</strong> hunt in the Annual Fest of my team.</span></h3></li>
@@ -273,8 +273,15 @@
             <p class="port-text">
                 Here is some of my work that I've done in various programming languages.
             </p>
+            <ul class="portfolio-filter">
+                <li class="list portfolio-filter-active" data-filter="all">All</li>
+                <li class="list" data-filter=".django">Django</li>
+                <li class="list" data-filter=".react">React</li>
+                <li class="list" data-filter=".misc">MISC</li>
+            </ul>
+            
             <div class="portfolios">
-                <div class="portfolio-item">
+                <div class="mix portfolio-item django">
                     <div class="image">
                         <img src="img/port1.jpg" alt="">
                     </div>
@@ -285,15 +292,18 @@
                                 <i class="fab fa-github"></i>
                             </a>
                             <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
+                                <i class="fas fa-info-circle"></i>
+                                <!-- <i class="fab fa-behance"></i> -->
                             </a>
                             <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
+                                <i class="fas fa-external-link-alt"></i>
+
+                                <!-- <i class="fab fa-youtube"></i> -->
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="mix portfolio-item react">
                     <div class="image">
                         <img src="img/port2.jpg" alt="">
                     </div>
@@ -312,7 +322,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="mix portfolio-item django">
                     <div class="image">
                         <img src="img/port3.jpg" alt="">
                     </div>
@@ -331,7 +341,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="mix portfolio-item misc">
                     <div class="image">
                         <img src="img/port4.jpg" alt="">
                     </div>
@@ -350,7 +360,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="mix portfolio-item react">
                     <div class="image">
                         <img src="img/port5.jpg" alt="">
                     </div>
@@ -369,7 +379,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="mix portfolio-item django">
                     <div class="image">
                         <img src="img/port2.jpg" alt="">
                     </div>
@@ -388,7 +398,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="mix portfolio-item misc">
                     <div class="image">
                         <img src="img/port7.jpg" alt="">
                     </div>
@@ -599,10 +609,12 @@
             <i class="fas fa-user"></i>
         </div>
         <div class="control" data-id="portfolio">
-            <i class="fas fa-briefcase"></i>
+            <!-- <i class="fas fa-briefcase"></i> -->
+            <i class="fas fa-project-diagram"></i>
         </div>
         <div class="control" data-id="blogs">
-            <i class="far fa-newspaper"></i>
+            <!-- <i class="far fa-newspaper"></i> -->
+            <i class="fas fa-trophy"></i>
         </div>
         <div class="control" data-id="contact">
             <i class="fas fa-envelope-open"></i>
@@ -613,6 +625,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="app.js"></script>
+    <script src="./js/mixitup.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
