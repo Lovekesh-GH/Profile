@@ -12,6 +12,15 @@
     })
 })();
 
+// Preloader
+$(window).on('load', function() {
+    if ($('#loader').length) {
+      $('#loader-bg').delay(1000).fadeOut('slow', function() {
+        $(this).remove();
+      });
+    }
+});
+
 var typed = new Typed(".typing",{
     strings : ["Programmer","Django Developer","Designer","Linux Lover","AI Lover","Pre-Final Year Student","ML Ethusiast"],
     startDelay: 1000,
